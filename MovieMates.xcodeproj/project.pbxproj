@@ -19,6 +19,7 @@
 		3881A3692B832B1000EC38DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3881A36B2B832B1400EC38DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3881A36E2B832B1400EC38DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3881A3752B832B7B00EC38DC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +36,7 @@
 		3881A35B2B832B1000EC38DC = {
 			isa = PBXGroup;
 			children = (
+				3881A3752B832B7B00EC38DC /* README.md */,
 				3881A3662B832B1000EC38DC /* MovieMates */,
 				3881A3652B832B1000EC38DC /* Products */,
 			);
