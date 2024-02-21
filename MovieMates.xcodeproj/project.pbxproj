@@ -7,19 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		383576C02B83499400635DD1 /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383576BF2B83499400635DD1 /* Recommendation.swift */; };
 		3881A3682B832B1000EC38DC /* MovieMatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881A3672B832B1000EC38DC /* MovieMatesApp.swift */; };
 		3881A36A2B832B1000EC38DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881A3692B832B1000EC38DC /* ContentView.swift */; };
 		3881A36C2B832B1400EC38DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3881A36B2B832B1400EC38DC /* Assets.xcassets */; };
 		3881A36F2B832B1400EC38DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3881A36E2B832B1400EC38DC /* Preview Assets.xcassets */; };
+		3881A3782B832CC800EC38DC /* RecommendationsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881A3772B832CC800EC38DC /* RecommendationsPageView.swift */; };
+		3881A37A2B832EC900EC38DC /* MoviesPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881A3792B832EC900EC38DC /* MoviesPageView.swift */; };
+		3881A37C2B832EF900EC38DC /* TvShowsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881A37B2B832EF900EC38DC /* TvShowsPageView.swift */; };
+		3881A3812B833F7400EC38DC /* RecommendationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881A3802B833F7400EC38DC /* RecommendationsService.swift */; };
+		3881A3842B833FAE00EC38DC /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881A3832B833FAE00EC38DC /* Secrets.swift */; };
+		3881A66F2B83483800EC38DC /* AWSDynamoDB in Frameworks */ = {isa = PBXBuildFile; productRef = 3881A66E2B83483800EC38DC /* AWSDynamoDB */; };
+		389EC7412B84BAFC004416C6 /* RecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389EC7402B84BAFC004416C6 /* RecommendationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		383576BF2B83499400635DD1 /* Recommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
 		3881A3642B832B1000EC38DC /* MovieMates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieMates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3881A3672B832B1000EC38DC /* MovieMatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMatesApp.swift; sourceTree = "<group>"; };
 		3881A3692B832B1000EC38DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3881A36B2B832B1400EC38DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3881A36E2B832B1400EC38DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3881A3752B832B7B00EC38DC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3881A3772B832CC800EC38DC /* RecommendationsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsPageView.swift; sourceTree = "<group>"; };
+		3881A3792B832EC900EC38DC /* MoviesPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPageView.swift; sourceTree = "<group>"; };
+		3881A37B2B832EF900EC38DC /* TvShowsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsPageView.swift; sourceTree = "<group>"; };
+		3881A3802B833F7400EC38DC /* RecommendationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsService.swift; sourceTree = "<group>"; };
+		3881A3832B833FAE00EC38DC /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		389EC7402B84BAFC004416C6 /* RecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3881A66F2B83483800EC38DC /* AWSDynamoDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,9 +69,12 @@
 		3881A3662B832B1000EC38DC /* MovieMates */ = {
 			isa = PBXGroup;
 			children = (
+				389EC73F2B84BAE3004416C6 /* Components */,
+				3881A3822B833FA200EC38DC /* Resources */,
+				3881A37D2B833ECA00EC38DC /* Services */,
+				3881A3762B832CAB00EC38DC /* Pages */,
 				3881A3672B832B1000EC38DC /* MovieMatesApp.swift */,
 				3881A3692B832B1000EC38DC /* ContentView.swift */,
-				3881A36B2B832B1400EC38DC /* Assets.xcassets */,
 				3881A36D2B832B1400EC38DC /* Preview Content */,
 			);
 			path = MovieMates;
@@ -67,6 +86,58 @@
 				3881A36E2B832B1400EC38DC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3881A3762B832CAB00EC38DC /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				3881A3772B832CC800EC38DC /* RecommendationsPageView.swift */,
+				3881A3792B832EC900EC38DC /* MoviesPageView.swift */,
+				3881A37B2B832EF900EC38DC /* TvShowsPageView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		3881A37D2B833ECA00EC38DC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3881A37E2B833F3C00EC38DC /* AWSDynamoDB */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3881A37E2B833F3C00EC38DC /* AWSDynamoDB */ = {
+			isa = PBXGroup;
+			children = (
+				3881A37F2B833F4500EC38DC /* Tables */,
+				3881A3802B833F7400EC38DC /* RecommendationsService.swift */,
+			);
+			path = AWSDynamoDB;
+			sourceTree = "<group>";
+		};
+		3881A37F2B833F4500EC38DC /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				383576BF2B83499400635DD1 /* Recommendation.swift */,
+			);
+			path = Tables;
+			sourceTree = "<group>";
+		};
+		3881A3822B833FA200EC38DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3881A3832B833FAE00EC38DC /* Secrets.swift */,
+				3881A36B2B832B1400EC38DC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		389EC73F2B84BAE3004416C6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				389EC7402B84BAFC004416C6 /* RecommendationView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +156,9 @@
 			dependencies = (
 			);
 			name = MovieMates;
+			packageProductDependencies = (
+				3881A66E2B83483800EC38DC /* AWSDynamoDB */,
+			);
 			productName = MovieMates;
 			productReference = 3881A3642B832B1000EC38DC /* MovieMates.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +187,9 @@
 				Base,
 			);
 			mainGroup = 3881A35B2B832B1000EC38DC;
+			packageReferences = (
+				3881A66D2B83483800EC38DC /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */,
+			);
 			productRefGroup = 3881A3652B832B1000EC38DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +216,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3881A3812B833F7400EC38DC /* RecommendationsService.swift in Sources */,
 				3881A36A2B832B1000EC38DC /* ContentView.swift in Sources */,
+				3881A3842B833FAE00EC38DC /* Secrets.swift in Sources */,
 				3881A3682B832B1000EC38DC /* MovieMatesApp.swift in Sources */,
+				383576C02B83499400635DD1 /* Recommendation.swift in Sources */,
+				3881A37A2B832EC900EC38DC /* MoviesPageView.swift in Sources */,
+				3881A37C2B832EF900EC38DC /* TvShowsPageView.swift in Sources */,
+				3881A3782B832CC800EC38DC /* RecommendationsPageView.swift in Sources */,
+				389EC7412B84BAFC004416C6 /* RecommendationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +364,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,8 +392,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,6 +428,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3881A66D2B83483800EC38DC /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/aws-sdk-ios-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.33.10;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3881A66E2B83483800EC38DC /* AWSDynamoDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3881A66D2B83483800EC38DC /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSDynamoDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3881A35C2B832B1000EC38DC /* Project object */;
 }
